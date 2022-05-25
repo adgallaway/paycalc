@@ -1,6 +1,6 @@
 Readme.md
 
-#paycalc
+# paycalc
 
 Paycalc is a program written in C to convert one rate of pay to another.
 User enters a pay amount.
