@@ -1,5 +1,4 @@
 #Pay Calculator by Aaron Gallaway (c)2023
-import sys
 import os
 import time
 
@@ -58,6 +57,7 @@ def case(selection, frequency):
         case _: #Default if anything other than 0-5 is entered
             clearScreen()
             print("\nINVALID ENTRY!! Please try again.\n")
+            time.sleep(2)
             menu2(frequency)
 
 
