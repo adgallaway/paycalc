@@ -16,7 +16,7 @@ def menu1():
     print("[4] Monthly")
     print("[5] Annually")
     frequency = input(':')
-    frequency = int(frequency[:1])
+    frequency = int(frequency[:1]) #Takes only the first character entered
     menu2(frequency)
 
 def menu2(frequency): #Select Which Calculation(s) to Perform
@@ -29,7 +29,7 @@ def menu2(frequency): #Select Which Calculation(s) to Perform
         if frequency != 4: print("[4] Monthly")
         if frequency != 5: print("[5] Annually")
         selection = input(':')
-        selection = int(selection[:1])
+        selection = int(selection[:1]) #Takes only the first character entered
         case(selection, frequency)
     else:
         clearScreen()
@@ -68,8 +68,9 @@ def hourly(frequency): #Perform Calculation for Hourly Pay
         case 3: hourlyPay = float(pay / 80)
         case 4: hourlyPay = float(((pay * 12) / 52) / 40)
         case 5: hourlyPay =float((pay / 52) / 40)
-    hourlyPay = round(hourlyPay, 2)
-    print("Estimated Hourly pay: " + str(hourlyPay))
+    #hourlyPay = round(hourlyPay, 2)
+    text = "Estimated Hourly pay: {:.2f}"
+    print(text.format(hourlyPay))
 
 def weekly(frequency): #Perform Calculation for Weekly Pay
     match frequency:
@@ -78,8 +79,9 @@ def weekly(frequency): #Perform Calculation for Weekly Pay
         case 3: weeklyPay = float(pay / 2)
         case 4: weeklyPay = float((pay * 12) / 52)
         case 5: weeklyPay =float(pay / 52)
-    weeklyPay = round(weeklyPay, 2)
-    print("Estimated Weekly pay: " + str(weeklyPay))
+    #weeklyPay = round(weeklyPay, 2)
+    text = "Estimated Weekly pay: {:.2f}"
+    print(text.format(weeklyPay))
 
 def biweekly(frequency): #Perform Calculation for Bi-Weekly Pay
     match frequency:
@@ -88,8 +90,9 @@ def biweekly(frequency): #Perform Calculation for Bi-Weekly Pay
         case 3: biWeeklyPay = float(pay)
         case 4: biWeeklyPay = float(((pay * 12) / 52) * 2)
         case 5: biWeeklyPay =float((pay / 52) * 2)
-    biWeeklyPay = round(biWeeklyPay, 2)
-    print("Estimated Bi-Weekly pay: " + str(biWeeklyPay))
+    #biWeeklyPay = round(biWeeklyPay, 2)
+    text = "Estimated Bi-Weekly pay: {:.2f}"
+    print(text.format(biWeeklyPay))
 
 def monthly(frequency): #Perform Calculation for Monthly Pay
     match frequency:
@@ -98,8 +101,9 @@ def monthly(frequency): #Perform Calculation for Monthly Pay
         case 3: monthlyPay = float((pay * 26) / 12)
         case 4: monthlyPay = float(pay)
         case 5: monthlyPay = float(pay / 12)
-    monthlyPay = round(monthlyPay, 2)
-    print("Estimated Monthly Pay: " + str(monthlyPay))
+    #monthlyPay = round(monthlyPay, 2)
+    text = "Estimated Monthly pay: {:.2f}"
+    print(text.format(monthlyPay))
 
 def annually(frequency): #Perform Calculation for Annual Pay
     match frequency:
@@ -108,8 +112,9 @@ def annually(frequency): #Perform Calculation for Annual Pay
         case 3: annualPay = float(pay * 26)
         case 4: annualPay = float(pay * 12)
         case 5: annualPay = float(pay)
-    annualPay = round(annualPay, 2)
-    print("Estimated Annual Pay: " + str(annualPay))
+    #annualPay = round(annualPay, 2)
+    text = "Estimated Annual pay: {:.2f}"
+    print(text.format(annualPay))
 
     
         
@@ -136,7 +141,7 @@ while True:
     print("\n[C] To Continue")
     print("[Q] To Quit")
     y_n = input(':')
-    y_n = y_n[:1]
+    y_n = y_n[:1] #Takes only the first character entered
     if y_n == "q" or y_n == "Q":
         break
 
