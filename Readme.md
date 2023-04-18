@@ -37,12 +37,7 @@ Readme.md
     Imports os, and time Modules
     Adds Function to Clear the Screen
         utilizes os.system
-        error handling added:
-            cls for Windows
-            clear for Linux/Mac O/S
-                needs testing
-                one code/multiple platforms
-                    version in C only for Windows
+            uses 'cls' to clear the screen in Windows
     Includes String Splicing
         takes only the first character input
     Adds Error Handling for Pay Input

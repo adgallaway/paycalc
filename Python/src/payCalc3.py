@@ -3,11 +3,8 @@ import os
 import time
 
 def clearScreen(): #Function Clears the Screen
-    try:
-        os.system('cls') #Clears Screen in Windows
-    except:
-        os.system('clear') #Clears Screen in Linux/Mac
-
+    os.system('cls')
+    
 def menu1():
     print("Select the frequency of pay")
     print("[1] Hourly")
