@@ -48,6 +48,13 @@ Readme.md
             returns '*****OPERATION TERMINATED*****'
             uses time.sleep for delay
             uses 'break' to end loop
+
+### payCalc4.py
+    Modified from payCalc3.py
+    Imports platform
+    Works on Windows and Linux (Ubuntu) OS
+        need to add support for MacOS
+
     
     
 
