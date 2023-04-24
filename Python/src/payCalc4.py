@@ -81,7 +81,7 @@ def hourly(frequency): #Perform Calculation for Hourly Pay
         case 4: hourlyPay = float(((pay * 12) / 52) / 40)
         case 5: hourlyPay =float((pay / 52) / 40)
     #hourlyPay = round(hourlyPay, 2)
-    text = "Estimated Hourly pay: {:.2f}"
+    text = "Estimated Hourly pay:    {:.2f}"
     print(text.format(hourlyPay))
 
 def weekly(frequency): #Perform Calculation for Weekly Pay
@@ -92,7 +92,7 @@ def weekly(frequency): #Perform Calculation for Weekly Pay
         case 4: weeklyPay = float((pay * 12) / 52)
         case 5: weeklyPay =float(pay / 52)
     #weeklyPay = round(weeklyPay, 2)
-    text = "Estimated Weekly pay: {:.2f}"
+    text = "Estimated Weekly pay:    {:.2f}"
     print(text.format(weeklyPay))
 
 def biweekly(frequency): #Perform Calculation for Bi-Weekly Pay
@@ -114,7 +114,7 @@ def monthly(frequency): #Perform Calculation for Monthly Pay
         case 4: monthlyPay = float(pay)
         case 5: monthlyPay = float(pay / 12)
     #monthlyPay = round(monthlyPay, 2)
-    text = "Estimated Monthly pay: {:.2f}"
+    text = "Estimated Monthly pay:   {:.2f}"
     print(text.format(monthlyPay))
 
 def annually(frequency): #Perform Calculation for Annual Pay
@@ -125,7 +125,7 @@ def annually(frequency): #Perform Calculation for Annual Pay
         case 4: annualPay = float(pay * 12)
         case 5: annualPay = float(pay)
     #annualPay = round(annualPay, 2)
-    text = "Estimated Annual pay: {:.2f}"
+    text = "Estimated Annual pay:    {:.2f}"
     print(text.format(annualPay))
 
     
